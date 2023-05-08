@@ -2,8 +2,8 @@ packaging_format = 2
 
 id = "leantime"
 name = "Leantime"
-description.en = "project management system for startups and innovators"
-description.fr = "système de gestion de projet pour les startups et les innovateurs"
+description.en = "Project management system for startups and innovators"
+description.fr = "Système de gestion de projet pour les startups et les innovateurs"
 
 version = "2.3.21~ynh1"
 
