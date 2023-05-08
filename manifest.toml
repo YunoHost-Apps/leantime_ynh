@@ -1,0 +1,70 @@
+packaging_format = 2
+
+id = "leantime"
+name = "Leantime"
+description.en = "project management system for startups and innovators"
+description.fr = "système de gestion de projet pour les startups et les innovateurs"
+
+version = "2.3.21~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "GPL-2.0"
+website = "https://leantime.io/"
+admindoc = "https://docs.leantime.io"
+code = "https://github.com/Leantime/leantime"
+
+[integration]
+yunohost = ">= 11.1.18"
+architectures = "all"
+multi_instance = true
+ldap = true
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/leantime"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "string"
+    choices = ["en-US", "es-ES", "it-IT", "fr-FR"]
+    default = "en-US"
+
+[resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://github.com/Leantime/leantime/releases/download/v2.3.21/Leantime-v2.3.21.tar.gz"
+        sha256 = "5a341c07322a067f9f439f826919318a3493e99b51fa6ac6d9513752f1bf3ad8"
+        autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+    subdirs = ["userfiles", "backupdb"]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "mariadb-server, php8.1-mysql, php8.1-mbstring, php8.1-xml, php8.1-curl, php8.1-gd, php8.1-imagick, php8.1-ldap"
+
+    [resources.database]
+    type = "mysql"
