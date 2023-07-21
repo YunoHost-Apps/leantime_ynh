@@ -9,12 +9,25 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+timezone="$(cat /etc/timezone)"
+key=$(ynh_string_random --length=18)
+
 #=================================================
 # MODIFY URL IN NGINX CONF
 #=================================================
 ynh_script_progression --message="Updating NGINX web server configuration..." --weight=1
 
 ynh_change_url_nginx_config
+
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
+
+ynh_add_config --template="../conf/.env" --destination="$install_dir/config/.env"
+
+chmod 400 "$install_dir/config/.env"
+chown $app:$app "$install_dir/config/.env"
 
 #=================================================
 # END OF SCRIPT
