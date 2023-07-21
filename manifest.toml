@@ -5,7 +5,7 @@ name = "Leantime"
 description.en = "Project management system for startups and innovators"
 description.fr = "Système de gestion de projet pour les startups et les innovateurs"
 
-version = "2.3.23~ynh1"
+version = "2.3.25~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ admindoc = "https://docs.leantime.io"
 code = "https://github.com/Leantime/leantime"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.1.21"
 architectures = "all"
 multi_instance = true
 ldap = true
@@ -36,7 +36,7 @@ ram.runtime = "50M"
     [install.language]
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
-    type = "string"
+    type = "select"
     choices = ["en-US", "es-ES", "it-IT", "fr-FR"]
     default = "fr-FR"
 
@@ -45,9 +45,10 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/Leantime/leantime/releases/download/v2.3.23/Leantime-v2.3.23.tar.gz"
-        sha256 = "13c7a757a5bdd96d7c74042395ed68a74b50347cc5c30023a561aeba1375bc7e"
-        autoupdate.strategy = "latest_github_tag"
+        url = "https://github.com/Leantime/leantime/releases/download/v2.3.25/Leantime-v2.3.25.tar.gz"
+        sha256 = "7afcabadc151c95ea6dd3628ed4f512d8d429836beb3c0f3b4c0b55f4b6936d2"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "Leantime-v*.tar.gz"
 
     [resources.system_user]
 
