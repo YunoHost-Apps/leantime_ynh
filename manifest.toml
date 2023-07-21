@@ -2,10 +2,10 @@ packaging_format = 2
 
 id = "leantime"
 name = "Leantime"
-description.en = "project management system for startups and innovators"
-description.fr = "système de gestion de projet pour les startups et les innovateurs"
+description.en = "Project management system for startups and innovators"
+description.fr = "Système de gestion de projet pour les startups et les innovateurs"
 
-version = "2.3.21~ynh1"
+version = "2.3.25~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,10 +16,10 @@ admindoc = "https://docs.leantime.io"
 code = "https://github.com/Leantime/leantime"
 
 [integration]
-yunohost = ">= 11.1.18"
+yunohost = ">= 11.1.21"
 architectures = "all"
 multi_instance = true
-ldap = true
+ldap = false
 sso = false
 disk = "50M"
 ram.build = "50M"
@@ -40,31 +40,29 @@ ram.runtime = "50M"
     [install.language]
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
-    type = "string"
+    type = "select"
     choices = ["en-US", "es-ES", "it-IT", "fr-FR"]
-    default = "en-US"
+    default = "fr-FR"
 
 [resources]
 
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/Leantime/leantime/releases/download/v2.3.21/Leantime-v2.3.21.tar.gz"
-        sha256 = "5a341c07322a067f9f439f826919318a3493e99b51fa6ac6d9513752f1bf3ad8"
-        autoupdate.strategy = "latest_github_tag"
+        url = "https://github.com/Leantime/leantime/releases/download/v2.3.25/Leantime-v2.3.25.zip"
+        sha256 = "aa42487659ace89bfa884226cf8a9070e2f1f45777edf726731760523fa903c3"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "Leantime-v*.zip"
 
     [resources.system_user]
 
     [resources.install_dir]
 
-    [resources.data_dir]
-    subdirs = ["userfiles", "backupdb"]
-
     [resources.permissions]
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, php8.1-mysql, php8.1-mbstring, php8.1-xml, php8.1-curl, php8.1-gd, php8.1-imagick, php8.1-ldap"
+    packages = "mariadb-server, php8.2-mysql, php8.2-mbstring, php8.2-xml, php8.2-curl, php8.2-gd, php8.2-imagick, php8.2-ldap"
 
     [resources.database]
     type = "mysql"
