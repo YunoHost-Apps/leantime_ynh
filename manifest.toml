@@ -48,7 +48,7 @@ ram.runtime = "50M"
         url = "https://github.com/Leantime/leantime/releases/download/v2.3.25/Leantime-v2.3.25.zip"
         sha256 = "aa42487659ace89bfa884226cf8a9070e2f1f45777edf726731760523fa903c3"
         autoupdate.strategy = "latest_github_release"
-        autoupdate.asset = "Leantime-v*.zip"
+        autoupdate.asset = "Leantime-v.*.zip"
 
     [resources.system_user]
 
