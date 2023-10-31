@@ -29,7 +29,7 @@ Leantime is a lean open source project management system for startups and innova
 * Official app website: <https://leantime.io/>
 * Official admin documentation: <https://docs.leantime.io>
 * Upstream app code repository: <https://github.com/Leantime/leantime>
-* YunoHost documentation for this app: <https://yunohost.org/app_leantime>
+* YunoHost Store: <https://apps.yunohost.org/app/leantime>
 * Report a bug: <https://github.com/YunoHost-Apps/leantime_ynh/issues>
 
 ## Developer info
