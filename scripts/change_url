@@ -24,10 +24,7 @@ ynh_change_url_nginx_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template=".env" --destination="$install_dir/config/.env"
-
-chmod 400 "$install_dir/config/.env"
-chown $app:$app "$install_dir/config/.env"
+ynh_replace_string --match_string="LEAN_APP_URL = 'https://$old_domain'" --replace_string="LEAN_APP_URL = 'https://$new_domain'" --target_file="$install_dir/config/.env"
 
 #=================================================
 # END OF SCRIPT
