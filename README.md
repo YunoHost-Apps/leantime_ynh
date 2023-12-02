@@ -18,7 +18,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Leantime is a lean open source project management system for startups and innovators. It's an alternative to ClickUp, Notion, and Asana.
 
-**Shipped version:** 2.4.5~ynh1
+**Shipped version:** 2.4.8~ynh1
 
 ## Screenshots
 
