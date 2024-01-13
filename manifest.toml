@@ -5,7 +5,7 @@ name = "Leantime"
 description.en = "Project management system for startups and innovators"
 description.fr = "Système de gestion de projet pour les startups et les innovateurs"
 
-version = "2.4.1~ynh1"
+version = "2.4.8~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -19,8 +19,11 @@ code = "https://github.com/Leantime/leantime"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = true
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -45,17 +48,22 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/Leantime/leantime/releases/download/v2.4.1/Leantime-v2.4.1.zip"
-        sha256 = "eaf88728697349a7c2898f5b03fde0e6afc2c58a0a0a26afb0a58b6c9bda8bd0"
+        url = "https://github.com/Leantime/leantime/releases/download/v2.4.8/Leantime-v2.4.8.zip"
+        sha256 = "dd555aa5b5d55797507f282fc42162d0fbb5dab2eb825b7721063c404f6ebb0c"
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset = "Leantime-v.*.zip"
 
     [resources.system_user]
+    allow_email = true
 
     [resources.install_dir]
 
     [resources.permissions]
     main.url = "/"
+    api.url = "/api"
+    api.allowed = "visitors"
+    api.auth_header =false
+    api.show_tile = false
 
     [resources.apt]
     packages = "mariadb-server, php8.2-mysql, php8.2-mbstring, php8.2-xml, php8.2-curl, php8.2-gd, php8.2-imagick, php8.2-ldap"
