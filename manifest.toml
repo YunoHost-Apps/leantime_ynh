@@ -7,7 +7,7 @@ description.fr = "Système de gestion de projet pour les startups et les innovat
 
 version = "3.0.4~ynh1"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "GPL-2.0"
