@@ -18,7 +18,7 @@ EZ editatu eskuz.
 
 Leantime is a lean open source project management system for startups and innovators. It's an alternative to ClickUp, Notion, and Asana.
 
-**Paketatutako bertsioa:** 3.1.1~ynh1
+**Paketatutako bertsioa:** 3.1.2~ynh1
 
 ## Pantaila-argazkiak
 
