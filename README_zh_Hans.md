@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Leantime
+# YunoHost 上的 Leantime
 
 [![集成程度](https://dash.yunohost.org/integration/leantime.svg)](https://dash.yunohost.org/appci/app/leantime) ![工作状态](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
 
@@ -18,7 +18,7 @@
 
 Leantime is a lean open source project management system for startups and innovators. It's an alternative to ClickUp, Notion, and Asana.
 
-**分发版本：** 3.1.3~ynh1
+**分发版本：** 3.1.4~ynh1
 
 ## 截图
 
