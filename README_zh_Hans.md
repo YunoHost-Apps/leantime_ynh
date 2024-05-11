@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Leantime
+# YunoHost 上的 Leantime
 
 [![集成程度](https://dash.yunohost.org/integration/leantime.svg)](https://dash.yunohost.org/appci/app/leantime) ![工作状态](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
 
