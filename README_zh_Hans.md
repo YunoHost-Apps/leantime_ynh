@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Leantime
 
-[![集成程度](https://dash.yunohost.org/integration/leantime.svg)](https://dash.yunohost.org/appci/app/leantime) ![工作状态](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/leantime.svg)](https://ci-apps.yunohost.org/ci/apps/leantime/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
 
 [![使用 YunoHost 安装 Leantime](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=leantime)
 

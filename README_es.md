@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Leantime para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/leantime.svg)](https://dash.yunohost.org/appci/app/leantime) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/leantime.svg)](https://ci-apps.yunohost.org/ci/apps/leantime/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
 
 [![Instalar Leantime con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=leantime)
 
