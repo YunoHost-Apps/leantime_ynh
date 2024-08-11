@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Leantime YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/leantime.svg)](https://dash.yunohost.org/appci/app/leantime) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/leantime.svg)](https://ci-apps.yunohost.org/ci/apps/leantime/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
 
 [![Instalatu Leantime YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=leantime)
 
