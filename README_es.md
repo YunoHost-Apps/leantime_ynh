@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Leantime para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/leantime.svg)](https://ci-apps.yunohost.org/ci/apps/leantime/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/leantime.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/leantime.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/leantime)](https://ci-apps.yunohost.org/ci/apps/leantime/)
+![Estado funcional](https://apps.yunohost.org/badge/state/leantime)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/leantime)
 
 [![Instalar Leantime con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=leantime)
 
@@ -18,7 +20,7 @@ No se debe editar a mano.
 
 Leantime is a lean open source project management system for startups and innovators. It's an alternative to ClickUp, Notion, and Asana.
 
-**Versión actual:** 3.2.0~ynh1
+**Versión actual:** 3.3.2~ynh1
 
 ## Capturas
 
