@@ -5,7 +5,7 @@ name = "Leantime"
 description.en = "Project management system for startups and innovators"
 description.fr = "Système de gestion de projet pour les startups et les innovateurs"
 
-version = "3.2.0~ynh2"
+version = "3.3.3~ynh1"
 
 maintainers = []
 
@@ -16,7 +16,8 @@ admindoc = "https://docs.leantime.io"
 code = "https://github.com/Leantime/leantime"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
@@ -48,8 +49,10 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/Leantime/leantime/releases/download/v3.2.0/Leantime-v3.2.0.zip"
-        sha256 = "1a287a157f6e57c99c42a2a5238b8daedf22a85718a0a5daaf3e2f904468308f"
+        url = "https://github.com/Leantime/leantime/releases/download/v3.3.3/Leantime-v3.3.3.zip"
+        sha256 = "70866eaefe98db1423e2d66689a019284c425d12bd1d7f95aa4698fc171d4078"
+        in_subdir = false
+
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset = "Leantime-v.*.zip"
 
@@ -57,6 +60,7 @@ ram.runtime = "50M"
     allow_email = true
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"
