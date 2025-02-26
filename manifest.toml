@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "leantime"
@@ -48,13 +50,13 @@ ram.runtime = "50M"
 
     [resources.sources]
 
-        [resources.sources.main]
-        url = "https://github.com/Leantime/leantime/releases/download/v3.4.2/Leantime-v3.4.2.zip"
-        sha256 = "33a51df17659cc640e24eea0e93fb9b47590153f1bec0f4902bf4d5c68f4b792"
-        in_subdir = false
+    [resources.sources.main]
+    url = "https://github.com/Leantime/leantime/releases/download/v3.4.2/Leantime-v3.4.2.zip"
+    sha256 = "33a51df17659cc640e24eea0e93fb9b47590153f1bec0f4902bf4d5c68f4b792"
+    in_subdir = false
 
-        autoupdate.strategy = "latest_github_release"
-        autoupdate.asset = "Leantime-v.*.zip"
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "Leantime-v.*.zip"
 
     [resources.system_user]
     allow_email = true
