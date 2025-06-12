@@ -5,7 +5,7 @@ name = "Leantime"
 description.en = "Project management system for startups and innovators"
 description.fr = "Système de gestion de projet pour les startups et les innovateurs"
 
-version = "3.5.5~ynh1"
+version = "3.5.6~ynh1"
 
 maintainers = []
 
@@ -49,8 +49,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/Leantime/leantime/releases/download/v3.5.5/Leantime-v3.5.5.zip"
-        sha256 = "65a5232d56091266b86028a355c375d5ea8402848ad1f54c460671130fee7be3"
+        url = "https://github.com/Leantime/leantime/releases/download/v3.5.6/Leantime-v3.5.6.zip"
+        sha256 = "f1bfa6114435e4b6d008d4fac3666ef930f14aef813ed9848397066e83ce81ee"
         in_subdir = false
 
         autoupdate.strategy = "latest_github_release"
